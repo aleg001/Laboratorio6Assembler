@@ -1,5 +1,7 @@
 /* Alejandro Gomez 20347 */
 /* Programa realizado para el laboratorio 6 */
+/* UVG 2021 - Assembler */
+/* 14/04/21 */
 
 .text
 .align 2
@@ -54,6 +56,7 @@ main:
 
     /* Se toma en cuenta si el valor es menos que 0 */
     cmp r3, #0 
+    /* El valor es mostrado */
     blt mPrint
     bge mmPrint
     
@@ -62,6 +65,7 @@ main:
 
         ldr r0,=pNegativo
         mov r1,r3
+        /* El valor es mostrado */
         bl printf
 
 
@@ -70,6 +74,7 @@ main:
         
         ldr r0,=pPositivo
         mov r1,r3
+        /* El valor es mostrado */
         bl printf
 
     /* Operaciones aritmeticas: Multiplicacion */
@@ -88,6 +93,7 @@ main:
         
         ldr r0,=pMulti
         mov r1,r3
+        /* El valor es mostrado */
         bl printf
 
     /* Operadores logicos: AND */
@@ -105,6 +111,7 @@ main:
 	
 	ldr r0,=pAND
 	mov r1,r3
+    /* El valor es mostrado */
 	bl printf
 
 
@@ -123,6 +130,7 @@ main:
 	
 	ldr r0,=pOR
 	mov r1,r3
+    /* El valor es mostrado */
 	bl printf
 
     /* Operadores logicos: EOR */
@@ -140,6 +148,7 @@ main:
 	
 	ldr r0,=pEOR
 	mov r1,r3
+    /* El valor es mostrado */
 	bl printf
 
     /* Operadores logicos: Corrimiento de bit */
@@ -157,6 +166,7 @@ main:
 	
 	ldr r0,=pCorr
 	mov r1,r3
+    /* El valor es mostrado */
 	bl printf
 
 
